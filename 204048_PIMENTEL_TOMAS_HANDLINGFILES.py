@@ -60,7 +60,7 @@ def main():
     CODE\t\t\tNAME\t\t\tQUANTITY\t\t\tSUBTOTAL
     ''')
         for x in receipt:
-            f.write(f'''\t\t{x}\t\t{products[x]["name"]}\t\t{products[x]["quantity"]}\t\t\t\t{products[x]["quantity"]*products[x]["price"]}
+            f.write(f'''{x}\t\t{products[x]["name"]}\t\t{products[x]["quantity"]}\t\t\t\t{products[x]["quantity"]*products[x]["price"]}
             ''')
             sumtotal+=products[x]["quantity"]*products[x]["price"]
         f.write(f'''Total:\t\t\t\t\t\t\t\t\t\t{sumtotal}
